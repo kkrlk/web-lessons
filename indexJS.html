@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+        startCalc();
+
+        function startCalc() {
+            let result;
+            let num_1;
+            let num_2;
+            let operation;
+
+            num_1 = NumberInput()
+            operation = Operatoin()
+            num_2 = NumberInput(2, operation)
+            result = Result(num_1, num_2, operation);
+            alert(result);
+                    
+        }
+
+
+        function Operatoin(operation) {
+
+            do {
+                let operation = prompt("Введите операцию: ");
+
+                if (operation == '+' || operation == '-' || operation == '*' || operation == '/' || operation == null) {
+                    return operation;
+                    break;
+                } else if (operation == '') {
+                    alert('Вы ничего не ввели!');
+                } else alert('Произошла ошибка, не верное действие, введите его снова');
+
+            } while (true)
+
+
+        }
+
+        function NumberInput(countNum, operation) {
+
+            let num;
+
+            do {
+                num = prompt("Введите число: ");
+                if (((!parseInt(num) && num > 0 && num < 0) || (countNum > 1 && num == 0 && operation == '/') || num == '')) {
+
+                    alert("Ошибка ввода данных!");
+                }
+                else {
+                    break;
+                }
+
+            }
+            while (true)
+            return num;
+        }
+
+    function Result(num_1, num_2, operation) {
+
+        let result;
+
+        switch (operation) {
+            case '+':
+                result = +num_1 + +num_2;
+                break;
+            case '-':
+                result = +num_1 - +num_2;
+                break;
+            case '/':
+                result = +num_1 / +num_2;
+                break;
+            case '*':
+                result = +num_1 * +num_2;
+                break;
+
+            default:
+                alert('Произошла ошибка');
+                break;
+        }
+        return result;
+    }
+
+    </script>
+</body>
+
+</html>

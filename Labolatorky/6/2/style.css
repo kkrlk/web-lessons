@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(35, 48, 59);
+}
+
+form {
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    border: 0;
+}
+
+#but1 {
+    background-color: #19b087;
+    color: aliceblue;
+}
+
+#but2 {
+    background-color: #435058;
+    color: rgb(163, 162, 162);
+    margin-left: -4px;
+}
+
+#text1 {
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.pole {
+    background-color: rgb(35, 48, 59);
+    border: 1px solid rgb(192, 191, 191);
+    height: 25px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.t1 {
+    width: 190px;
+    margin-right: 4px;
+    margin-left: 0;
+}
+
+.t2 {
+    width: 394px;
+}
+
+.but1 {
+    background-color: #19b087;
+    width: 400px;
+    height: 50px;
+    border: 0;
+    color: aliceblue;
+    font-size: 22px;
+    font-family: lucida console BLACK;
+}
+
+input[placeholder]::-webkit-input-placeholder::after {
+    content: "*";
+    color: rgb(255, 0, 0);
+}
+
+.cont {
+    position: relative;
+    white-space: nowrap;
+}
+
+.placeholder {
+    white-space: nowrap;
+    position: absolute;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: aliceblue;
+}
+
+.red {
+    white-space: nowrap;
+    color: rgb(0, 255, 42);
+}
+
+.txt1:focus~.p1,
+.txt1:valid~.p1 {
+    display: none;
+}
+
+.txt2:focus~.p2,
+.txt2:valid~.p2 {
+    display: none;
+}
+
+.txt3:focus~.p3,
+.txt3:valid~.p3 {
+    display: none;
+}
+
+.txt4:focus~.p4,
+.txt4:valid~.p4 {
+    display: none;
+}
+
+.t2:focus~.p3,
+.t2:valid~.p3 {
+    display: none;
+}
+
+.p1 {
+    top: 10%;
+    left: 5px;
+}
+
+.p2 {
+    top: 10%;
+    left: 210px;
+}
+
+.p3 {
+    top: 43%;
+    left: 5px;
+}
+
+.p4 {
+    top: 77%;
+    left: 5px;
+}
